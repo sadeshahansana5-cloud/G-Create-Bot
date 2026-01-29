@@ -26,7 +26,7 @@ db_files = client['autofilter']  # Files database
 db_requests = client['movie_requests_db']  # Separate database for requests
 
 files_collection = db_files['royal_files']  # Your files collection
-requests_collection = db_requests['requests']  # Requests collection
+requests_collection = db_requests['requestbot']  # Requests collection
 
 # --- FLASK SERVER (To keep Render Awake) ---
 app = Flask(__name__)

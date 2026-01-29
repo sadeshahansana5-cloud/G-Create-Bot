@@ -20,8 +20,8 @@ TARGET_GROUP_LINK = os.environ.get("TARGET_GROUP_LINK", "https://t.me/your_file_
 
 # --- DATABASE SETUP ---
 client = MongoClient(MONGO_URI)
-db = client['my_movie_db']
-files_collection = db['files'] # ඔබේ ෆයිල් තියෙන තැන (Read Only logic)
+db = client['autofilter']
+files_collection = db['royal_files'] # ඔබේ ෆයිල් තියෙන තැන (Read Only logic)
 requests_collection = db['requests'] # Request store කරන තැන (Read/Write)
 
 # --- FLASK SERVER (To keep Render Awake) ---
